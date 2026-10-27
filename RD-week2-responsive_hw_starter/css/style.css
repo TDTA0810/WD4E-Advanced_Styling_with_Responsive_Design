@@ -43,6 +43,28 @@ div{
   padding: 2px;
 }
 
+@media screen and (min-width: 772px) {
+  div {
+    display: inline-block;
+    width: 45%;
+    margin: 2%;
+    box-sizing: border-box;
+  }
+
+  div img {
+    max-height: 30vh;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  div {
+    width: 30%;
+    margin: 1%;
+  }
+}
 
 
 
