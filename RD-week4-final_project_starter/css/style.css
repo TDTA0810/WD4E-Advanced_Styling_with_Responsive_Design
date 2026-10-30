@@ -30,6 +30,16 @@ p {
     text-align: center;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -40,7 +50,7 @@ figure {
     margin: 0;
     padding: 10px;
     border: 2px solid #222;
-    background-color: white;
+    background-color: #fff;
     color: #222;
 }
 
@@ -53,6 +63,7 @@ figure img {
 figcaption {
     padding: 8px;
     text-align: center;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 772px) {
@@ -80,15 +91,15 @@ figcaption {
 }
 
 @media screen and (min-width: 992px) {
-    figure:nth-child(3n) {
-        grid-column: 1 / -1;
-    }
-
     figure {
         aspect-ratio: auto;
         border-radius: 0;
         overflow: visible;
         display: block;
+    }
+
+    figure:nth-child(3n) {
+        grid-column: 1 / -1;
     }
 
     figure img {
@@ -107,6 +118,6 @@ figcaption {
     figure {
         background-color: #333;
         color: #fff1a8;
-        border: 2px solid black;
+        border: 2px solid #000;
     }
 }
